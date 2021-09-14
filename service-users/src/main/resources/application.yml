@@ -1,0 +1,13 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-54-83-137-206.compute-1.amazonaws.com:5432/d9f6jnqbdhb6md
+    platform: postgres
+    username: yknoaowdvokavm
+    password: 666ea1447286c80bb99d69441a17f479a0cfa3144ca2ee15f6a17cdf6f1dfe5f
+    jpa:
+      generate-ddl: true
+      hibernate:
+        ddl-auto: none

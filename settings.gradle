@@ -1,0 +1,5 @@
+rootProject.name = 'co.com.poli.movies'
+
+include 'service-users'
+include  'service-movies'
+include  'service-showtimes'
