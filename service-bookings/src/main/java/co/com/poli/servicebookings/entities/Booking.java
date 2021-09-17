@@ -1,5 +1,8 @@
 package co.com.poli.servicebookings.entities;
 
+import co.com.poli.servicebookings.model.Movie;
+import co.com.poli.servicebookings.model.ShowTimes;
+import co.com.poli.servicebookings.model.User;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,11 +25,16 @@ public class Booking {
     @NotNull(message = "El user id no puede ser nulo")
     @Column(name="user_id")
     private Long userId;
+    @Transient
+    private User user;
     @NotNull(message = "El user id no puede ser nulo")
     @Column(name="showtime_id")
     private Long showTimeId;
+    @Transient
+    private ShowTimes showTimes;
     @Column(name="movies")
-    private int movies;
+    private Long movies;
+    private Movie movie;
 
     @Override
     public boolean equals(Object o) {

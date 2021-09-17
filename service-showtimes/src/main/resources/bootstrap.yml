@@ -3,6 +3,6 @@ spring:
     name: service-showtimes
   cloud:
     config:
-      uri: http://localhost:9004
+      uri: http://localhost:9000
       name: admin
       password: admin

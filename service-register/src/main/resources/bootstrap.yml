@@ -4,5 +4,5 @@ spring:
       uri: http://localhost:9000
       username: admin
       password: admin
-  application:
-    name: service-users
+  applicaction:
+    name: service-register

@@ -1,8 +1,8 @@
 spring:
   cloud:
     config:
-      uri: http://localhost:9000
+      uri: http://localhost:8282
       username: admin
       password: admin
   application:
-    name: service-users
+    name: service-gateway

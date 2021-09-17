@@ -52,6 +52,14 @@ public class UserController {
         userService.delete(user);
         return builder.success(user);
     }
+    @GetMapping("{id}")
+    public Response findById(@PathParam("id") Long id){
+        User user = userService.findById(id);
+        if(user==null){
+            return builder.failed();
+        }
+        return builder.success(user);
+    }
 
 
     private String formatMessage(BindingResult result) {
